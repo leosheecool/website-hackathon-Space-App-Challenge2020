@@ -45,25 +45,27 @@
                 <form class="custom-form" style="height: 537px;background-color: rgba(34,34,34,0.36);">
                     <h1 style="color: rgb(198,198,198);">Your informations of the day</h1>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="dropdown-input-field" style="color: rgb(193,193,193);">Sleep rythm</label></div>
-                        <div class="col-sm-4 input-column">
-                            <div class="dropdown"><button class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">sleep rythm 1</button>
-                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">sleep rythm 2</a><a class="dropdown-item" role="presentation" href="#">sleep rythm 3<br></a><a class="dropdown-item" role="presentation" href="#">sleep rythm 4<br></a></div>
+                        <div class="col-sm-4 label-column" style="color: rgb(193,193,193);"><label class="col-form-label" for="name-input-field">UTC of the departure country</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="color: rgb(193,193,193);">UTC of the country if arrival</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
+                    </div><button class="btn btn-light submit-button" type="button" style="background-color: rgb(86,86,86);" data-toggle="modal" data-target="#resultModal">Submit informations</button>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="resultModal">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Results</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="modal-body">
+                                    <p>you need to lie down at:</p>
+                                    <p>you need to wake up at:</p>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-primary btn-dark" type="button" data-dismiss="modal">OK</button></div>
                             </div>
                         </div>
                     </div>
-                    <div class="form-row form-group">
-                        <div class="col-sm-4 label-column" style="color: rgb(193,193,193);"><label class="col-form-label" for="name-input-field">IQ</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
-                    </div>
-                    <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="color: rgb(193,193,193);">Time to solve problem</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
-                    </div>
-                    <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="color: rgb(193,193,193);">Physic exercise performance</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
-                    </div><button class="btn btn-light submit-button" type="button" style="background-color: rgb(86,86,86);">Submit informations</button></form>
+                </form>
             </div>
         </div>
     </div>
