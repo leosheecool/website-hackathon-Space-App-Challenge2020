@@ -10,6 +10,7 @@ footer {
   bottom: 0;
   color: #fff;
   max-height: 100%;
+  position: absolute;
 }
 
 .footer-navigation h3 {
